@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FBC465;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    transform: scale(1);
+}
+
+.gradient-circle {
+    background: conic-gradient(#93ADD2 0%,
+            #7C9FD2 40%,
+            #FDECAA 40%,
+            #FDE68C 60%,
+            #FBA065 60%,
+            #FDCBAA 100%);
+    height: 320px;
+    width: 320px;
+    z-index: -2;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
